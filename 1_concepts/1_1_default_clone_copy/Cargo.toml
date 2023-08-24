@@ -1,0 +1,10 @@
+[package]
+name = "step_1_1"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+
+[dependencies.smart-default]
+version = "0.7.1"
+git = "https://github.com/idanarye/rust-smart-default.git"
