@@ -16,7 +16,7 @@ jobs:
       crates: ${{ steps.crates.outputs.crates }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           # Fetch all history so that git diff can compare against any commit
           fetch-depth: 0
@@ -70,7 +70,7 @@ jobs:
         crate: ${{ fromJson(needs.changed_crates.outputs.crates) }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Rust
         id: rust
